@@ -1,5 +1,5 @@
 pipeline{
-
+agents none
 stages{
 stage("Build"){
 agents any
@@ -9,7 +9,7 @@ steps{
   }
   }
   }
-  stage("test"){
+stage("test"){
 steps{
 agents any
   step{
