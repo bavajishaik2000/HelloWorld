@@ -60,7 +60,7 @@ pipeline {
                    def recipients = emailextrecipients([ [$class: 'DevelopersRecipientProvider'],[$class: 'CulpritsRecipientProvider']])
              
                      mail to: recipients, subject: "Failure", body: "failure"
-}
+                    
                 }
             }
         }
