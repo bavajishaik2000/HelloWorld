@@ -21,7 +21,7 @@ agents any
   agents none
 steps{
 script{
-timeout(time:5,unit:"MINUTES'){
+timeout(time:5,unit:'MINUTES'){
 input (id:'Deploy', message:'Deploy to production?', submitter:'bavaji', ok:'Deploy')
 }
    }
